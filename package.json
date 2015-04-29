@@ -1,0 +1,29 @@
+{
+  "name": "ImageBook",
+  "version": "0.0.0",
+  "description": "book image",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "watchify -o resources/js/popup.js -v -d js/app.js",
+    "build": "browserify .| uglifyjs -cm -t resources/js/popup.js"
+  },
+  "author": "yuzame",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "keymirror": "^0.1.1",
+    "object-assign": "^2.0.0",
+    "react": "^0.13.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "envify": "^3.4.0",
+    "reactify": "^1.1.0",
+    "watchify": "^3.1.2"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}

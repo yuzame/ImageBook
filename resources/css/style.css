@@ -1,0 +1,138 @@
+body {
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    background: #FFFDFE;
+    min-width: 430px;
+}
+
+#header {
+	display:block;
+	min-height: 30px;	
+	left: 0;
+	top: 0;
+}
+
+#header li {
+	color: #CEBFA2;
+	font-weight: 300;
+	margin-right: 8px;
+	float: left;
+	font-size: small;
+	list-style: none;
+	cursor: pointer;
+}
+
+#header li:hover, #header li.selected {
+	color: #AB9C89;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #AB9C89;
+}
+
+#tab li {
+	color: #CB7E76;
+	padding: 6px;
+	float: left;
+	list-style: none;
+	cursor: pointer;
+	font-size: small;
+}
+
+#tab li:hover {
+    padding: 5px;
+	border: 1px #E0B5A2 solid;
+	cursor: pointer;
+	border-radius: 3px
+}
+
+#tab li.selected {
+    padding: 5px;
+	border: 1px #CB7E76 solid;
+	border-radius: 3px
+}
+
+#tab:after {
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+	content: ".";
+}
+
+#image-items img.unload {
+	display: none;
+}
+
+
+#image-items img {
+    vertical-align: middle;
+	margin: 3px;
+    border-radius: 3px;
+}
+
+#image-items img:hover {
+	-webkit-box-shadow: #6E6554 0px 0px 6px;
+	cursor: pointer;
+}
+
+#image-items img.selected {
+	-webkit-box-shadow: #000 0px 0px 6px;
+}
+
+#image-items:after {
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+	content: ".";
+}
+
+#footer {
+	margin-top: 10px;
+}
+
+#footer input:focus, #footer button:focus {
+    outline: 0;
+}
+
+#footer button {
+	cursor: pointer;
+	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+#footer input {
+	margin: 2px;
+}
+
+#footer button {
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+	margin-left: 4px;
+	border-radius: 3px;
+}
+
+#save {
+	border: 1px #4C8EFA solid;
+	font-size: 10px;
+	background-color: #4C8EFA;
+	color: #FFFDFE;
+}
+
+#save:hover, #save:active {
+	color:#FCC335;
+}
+
+#delete {
+	border: 2px #FCC9AA solid;
+	margin-right: 12px;
+	background-color: #FCC9AA;
+	font-size: 12px;
+	color: #FFFDFE;
+}
+
+#delete-tab {
+	border: 2px #D01417 solid;
+	background-color: #D01417;
+	font-size: 8px;
+	color: #FFFDFE;
+}
+
+#delete:hover, #delete-tab:hover {
+	color: black;
+}
